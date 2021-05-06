@@ -15,13 +15,27 @@
     <form id="survey-form" action="/action_page.php">
 
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">name</label>
+        <label for="exampleFormControlInput1" class="form-label" id="name-label">name</label>
         <input type="text" class="form-control" id="name" placeholder="name" required>
       </div>
 
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">email</label>
+        <label for="exampleFormControlInput1" class="form-label" id="email-label">email</label>
         <input type="email" class="form-control" id="email" placeholder="email" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label" id="number-label">Number</label>
+        <input type="number" class="form-control" id="number" required min="1" max="1000">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Example select</label>
+        <select class="form-control" id="exampleFormControlSelect1" id="dropdown">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
       </div>
 
       <!--<div class="mb-3">
