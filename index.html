@@ -4,11 +4,39 @@
     <meta charset="UTF-8">
     <title id="title"><h1>TITLE</h1></title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <p id="description">It's a short description</p>
+
+    <form id="survey-form" action="/action_page.php">
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">name</label>
+        <input type="text" class="form-control" id="name" placeholder="name" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">email</label>
+        <input type="email" class="form-control" id="email" placeholder="email" required>
+      </div>
+
+      <!--<div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="submit" value="Submit">-->
+    </form>
+
+    
 
     <script  src="js/index.js"></script>
   </body>
