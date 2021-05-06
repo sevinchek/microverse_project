@@ -1,15 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title id="title"><h1>TITLE</h1></title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <title>MICROVERSE TRIAL</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
   </head>
 
-  <body>
+  <body class="d-flex justify-content-center flex-column align-items-center w-100 background-50">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <p id="description">It's a short description</p>
+    <h1 id="title" class="text-white margin-top-50">TITLE</h1>
+    <p id="description" class="text-white mb-4">It's a short description</p>
+    <div class="d-flex justify-items-center w-100 align-items-center justify-content-center">
+    <form id="survey-form" action="/action_page.php" class="w-50 d-flex flex-column form-background p-5 rounded">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label text-white" id="name-label"
+          >name</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="name"
+          required
+        />
+      </div>
 
-    <script  src="js/index.js"></script>
+      <div class="mb-3">
+        <label
+          for="exampleFormControlInput1"
+          class="form-label text-white"
+          id="email-label"
+          >email</label
+        >
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="email"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label
+          for="exampleFormControlInput1"
+          class="form-label text-white"
+          id="number-label"
+          >Number</label
+        >
+        <input
+          type="number"
+          class="form-control"
+          id="number"
+          placeholder="Number"
+          required
+          min="1"
+          max="1000"
+        />
+      </div>
+      <div class="mb-3">
+      <div class="form-group">
+        <label class="text-white form-label" for="exampleFormControlSelect1">Example select</label>
+        <select class="form-control" id="dropdown">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      </div>
+      </div>
+
+      <div class="mb-3">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault1"
+            value="yes"
+          />
+          <label class="form-check-label text-white" for="flexRadioDefault1"> Yes </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="flexRadioDefault"
+          id="flexRadioDefault2"
+          value="no"
+        />
+        <label class="form-check-label text-white" for="flexRadioDefault2"> No </label>
+      </div>
+      </div>
+
+      <div class="mb-3">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value="1"
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label text-white" for="flexCheckDefault"> 1 </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value="2"
+          id="flexCheckChecked"
+          checked
+        />
+        <label class="form-check-label text-white" for="flexCheckChecked"> 2 </label>
+      </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label text-white" id="name-label"
+          >Comments</label
+        >
+        <textarea
+          type="text"
+          class="form-control"
+          id="comments"
+          placeholder="Please Write Your Comments"
+        ></textarea>
+      </div>
+
+      <div class="mb-3">
+        <button type="submit" class="btn btn-success w-100 btn-lg" id="submit" value="submit"/>submit</button>
+      </div>
+    </form>
+  </div>
+
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,13 @@
+.background-50 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.form-background {
+    background-color: rgba(36, 35, 68, 0.9); 
+}
+
+.margin-top-50 {
+    margin-top: 50px;
+}
