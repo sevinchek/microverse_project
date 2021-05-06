@@ -1,0 +1,9 @@
+.background-50 {
+    background-color: rgba(0, 0, 255, 0.7);
+    background-image: url('../img/background.webp');
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
